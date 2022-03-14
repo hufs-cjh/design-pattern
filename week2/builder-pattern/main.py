@@ -14,13 +14,13 @@ v_3d_twos = director.twos(builder_3d).build()
 v_3d_something = builder_3d.set_x(3).set_y(6).set_z(4).build()
 
 multiplied_2d = v_2d_ones.get_scalar_multi(3)   # 2D Ones * 3 = (3, 3, 0)
-print(f"2D ONES * 3 = ({multiplied_2d.x}, {multiplied_2d.y}, {multiplied_2d.z})")
+print(f"2D ONES * 3 = {multiplied_2d.get_state()}")
 
 v_2d_ones.plus(v_2d_something)                  # 2D Ones + (2, 4, 0) = (3, 5, 0)
-print(f"2D ONES + (2, 4, 0) = ({v_2d_ones.x}, {v_2d_ones.y}, {v_2d_ones.z})")
+print(f"2D ONES + (2, 4, 0) = {v_2d_ones.get_state()}")
 
 multiplied_3d = v_3d_twos.get_scalar_multi(10)  # 3D Twos * 10 = (20, 20, 20)
-print(f"3D TWOS * 10 = ({multiplied_3d.x}, {multiplied_3d.y}, {multiplied_3d.z})")
+print(f"3D TWOS * 10 = {multiplied_3d.get_state()}")
 
 multiplied_3d.minus(v_3d_something)             # (3D Twos * 10) - (3, 6, 4) = (17, 14, 16)
-print(f"(3D TWOS * 10) - (3, 6, 4) = ({multiplied_3d.x}, {multiplied_3d.y}, {multiplied_3d.z})")
+print(f"(3D TWOS * 10) - (3, 6, 4) = {multiplied_3d.get_state()}")

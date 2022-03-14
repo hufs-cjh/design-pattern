@@ -9,7 +9,6 @@ class MyVector:
         self.y = y
         self.z = z
         self.dim = dim
-        self.dist = 0
 
     def normalize(self) -> MyVector:
         mag = self.get_magnitude()
