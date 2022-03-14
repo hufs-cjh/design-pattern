@@ -1,5 +1,9 @@
-class Component:
+from abc import *
+
+
+class Component(metaclass=ABCMeta):
     def __init__(self, color):
+        super().__init__()
         self.color = color
 
 
