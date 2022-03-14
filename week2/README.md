@@ -6,10 +6,10 @@
   * components.py: Component Classes (Button, Scroll, etc...)
   * factories.py: UIFactory Classes
   * main.py: test code
-  * class-diagram.jpg: Class Diagram Image
+  * class_diagram.jpg: Class Diagram Image
 * builder-pattern: Directory for assignment 2
   * vector.py: MyVector Class
   * builder.py: VectorBuilder Classes
   * director.py: VectorDirector Class
   * main.py: test code
-  * class-diagram.jpg: Class Diagram Image
+  * class_diagram.jpg: Class Diagram Image
