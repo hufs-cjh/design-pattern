@@ -1,8 +1,9 @@
+from abc import ABCMeta
 from components import *
 
 
-# Factories
-class UIFactory:
+# Factory Interface
+class UIFactory(metaclass=ABCMeta):
     def get_button(self) -> Button:
         raise NotImplementedError
 

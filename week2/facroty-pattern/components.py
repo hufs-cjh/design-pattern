@@ -1,6 +1,7 @@
 from abc import *
 
 
+# Component Abstract Class
 class Component(metaclass=ABCMeta):
     def __init__(self, color):
         super().__init__()
